@@ -1082,7 +1082,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif,"Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 1.42857143;
   color: #333;
@@ -1587,6 +1587,14 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
+
+.container-top {
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
 @media (min-width: 768px) {
   .container {
     width: 750px;
@@ -4165,7 +4173,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar {
   position: relative;
-  min-height: 50px;
+  min-height: 70px;
   margin-bottom: 20px;
   border: 1px solid transparent;
 }
@@ -4180,8 +4188,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-collapse {
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
   overflow-x: visible;
   -webkit-overflow-scrolling: touch;
   border-top: 1px solid transparent;
@@ -4273,8 +4281,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .navbar-brand {
   float: left;
-  height: 50px;
-  padding: 15px 15px;
+  height: 90px;
+  padding: 5px 5px;
   font-size: 18px;
   line-height: 20px;
 }

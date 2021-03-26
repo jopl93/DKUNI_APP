@@ -8,7 +8,7 @@ html {
 }
 @media(min-width:767px) {
     .navbar {
-        padding: 20px 0;
+        padding: 10px 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -71,12 +71,20 @@ html {
 	background-color: #F0F0F0;
 }
 .navbar-default {
-    background-color: #EBFAFF;
+    background-color: #eaf7f8;
     border-color: #e7e7e7;
 }
 .navbar-default .navbar-nav > li > a {
     color: #000;
 }
 
+.nav{
+  font-family: Oswald;
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  transform: translate(100%, -50%);
 
+}
 
