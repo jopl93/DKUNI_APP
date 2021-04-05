@@ -48,23 +48,18 @@ html {
     text-align: center;
     background: #fff;
 }
-.about-section {
+
+.noegletal-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center;
     background: #EFDECD;
 }
-.whatwedo-section {
+.kontakt-section {
     height: 100%;
-    padding-top: 150px;
+    padding-top: 100px;
     text-align: center;
     background: #fff;
-}
-.contact-section {
-    height: 100%;
-    padding-top: 150px;
-    text-align: center;
-    background: #EFDECD;
 }
 .navbar-default .navbar-nav > li > a:hover {
 	color: #333;
@@ -82,9 +77,9 @@ html {
   font-family: Oswald;
   font-size: 16px;
   font-weight: bold;
-  position: absolute;
+  /*position: absolute;
   top: 50%;
-  transform: translate(100%, -50%);
+  transform: translate(100%, -50%);*/
 
 }
 
