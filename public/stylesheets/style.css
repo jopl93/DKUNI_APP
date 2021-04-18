@@ -3,7 +3,7 @@
 }
 
 .empty{
-  padding-top: 10%;
+  padding: 5%;
 }
 
 select {
@@ -39,4 +39,23 @@ select {
   remove for transparency */
   background-color: #fff;
   background-image: linear-gradient(to top, #f9f9f9, #fff 33%);   
+}
+
+p {
+  text-align: left;
+}
+
+.headings {
+  margin: 2%;
+  margin-bottom: 3%;
+}
+
+#graph {
+  margin-top: 2%;
+  height: 500px;
+  width: 300px;
+  border:0; 
+  text-decoration:none; 
+  outline:none;
+  background: none;
 }
