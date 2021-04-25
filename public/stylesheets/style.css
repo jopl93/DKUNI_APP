@@ -3,7 +3,7 @@
 }
 
 .empty{
-  padding: 5%;
+  padding: 1%;
 }
 
 select {
@@ -28,7 +28,7 @@ select {
   min-width: 15ch;
   max-width: 30ch;
 
-  border: 1px solid var(--select-border);
+  border: 1px solid; /*var(--select-border);*/
   border-radius: 0.25em;
   padding: 0.25em 0.5em;
 
@@ -37,8 +37,8 @@ select {
 
   /* Optional styles
   remove for transparency */
-  background-color: #fff;
-  background-image: linear-gradient(to top, #f9f9f9, #fff 33%);   
+    background-color:  #f1f7f7;
+  /* background-image: linear-gradient(to top, #f9f9f9, #fff 33%);    */
 }
 
 p {
@@ -50,7 +50,7 @@ p {
   margin-bottom: 3%;
 }
 
-#graph {
+#graph, #myDiv {
   margin-top: 2%;
   height: 500px;
   width: 300px;
@@ -58,4 +58,26 @@ p {
   text-decoration:none; 
   outline:none;
   background: none;
+  align-content: center;
+}
+#myDiv {
+  margin-top: 3%;
+  margin-left: -4%;
+  width: 100%;
+}
+
+.user-select-none .svg-container {
+  position: static;
+}
+
+
+.img-direktor{
+
+  width: 20%;
+  height: 20%;
+  align-content: left;
+}
+
+.space-bt-text{
+  padding: 2%;
 }

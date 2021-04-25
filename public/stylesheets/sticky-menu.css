@@ -33,40 +33,39 @@ html {
     bottom: 50px;
     right: 0;
     background-color: #FFF;
-    color: #337AB7;
+    color: #3e858b;
     text-align: center;
     font-size: 30px;
     text-decoration: none;
 }
 #back2Top:hover {
-    background-color: #337AB7;
+    background-color: #3e858b;
     color: #FFF;
 }
 .welcome-section {
     height: 100%;
     padding-top: 150px;
     text-align: center;
-    background: #fff;
+    background: #f1f7f7;
 }
 
 .noegletal-section {
     height: 100%;
     padding-top: 100px;
     text-align: center;
-    background: #EFDECD;
+    background: #fff;
 }
 .kontakt-section {
     height: 100%;
     padding-top: 100px;
     text-align: center;
-    background: #fff;
+    background:  #f1f7f7;
 }
 .navbar-default .navbar-nav > li > a:hover {
-	color: #333;
-	background-color: #F0F0F0;
+	color:  #b7938d;
 }
 .navbar-default {
-    background-color: #eaf7f8;
+    background-color: #ffffff;
     border-color: #e7e7e7;
 }
 .navbar-default .navbar-nav > li > a {
