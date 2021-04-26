@@ -43,23 +43,22 @@ html {
     color: #FFF;
 }
 .welcome-section {
-    height: 100%;
-    padding-top: 150px;
+    padding-top: 125px;
     text-align: center;
     background: #f1f7f7;
 }
 
 .noegletal-section {
-    height: 100%;
-    padding-top: 100px;
+    padding-top: 12%;
     text-align: center;
     background: #fff;
+    padding-bottom: 12%;
 }
 .kontakt-section {
-    height: 100%;
-    padding-top: 100px;
+    padding-top: 12%;
     text-align: center;
     background:  #f1f7f7;
+    padding-bottom: 12%;
 }
 .navbar-default .navbar-nav > li > a:hover {
 	color:  #b7938d;

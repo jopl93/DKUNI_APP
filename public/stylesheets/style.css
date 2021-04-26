@@ -34,6 +34,7 @@ select {
 
   font-size: 1.25rem;
   line-height: 1.1;
+  margin-bottom: 30px;
 
   /* Optional styles
   remove for transparency */
@@ -47,7 +48,7 @@ p {
 
 .headings {
   margin: 2%;
-  margin-bottom: 3%;
+  margin-bottom: 1%;
 }
 
 #graph, #myDiv {
@@ -80,4 +81,9 @@ p {
 
 .space-bt-text{
   padding: 2%;
+}
+
+.end-div{
+
+  margin-bottom: 25px;
 }
