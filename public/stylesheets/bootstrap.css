@@ -1083,7 +1083,7 @@ html {
 }
 body {
   font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif,"Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
@@ -1223,7 +1223,7 @@ h2,
 h3,
 .h3 {
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 h1 small,
 .h1 small,
@@ -4528,8 +4528,8 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
-  color: #555;
-  background-color: #e7e7e7;
+  color: #b7938d;
+  background-color: #f1f7f7;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,

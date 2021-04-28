@@ -43,29 +43,30 @@ html {
     color: #FFF;
 }
 .welcome-section {
-    padding-top: 125px;
+    padding-top: 150px;
     text-align: center;
     background: #f1f7f7;
+    padding-bottom: 5%;
 }
 
 .noegletal-section {
     padding-top: 5%;
     text-align: center;
     background: #fff;
-    padding-bottom: 12%;
+    padding-bottom: 5%;
 }
 .kontakt-section {
     padding-top: 5%;
     text-align: center;
     background:  #f1f7f7;
-    padding-bottom: 12%;
+    padding-bottom: 5%;
 }
 .navbar-default .navbar-nav > li > a:hover {
 	color:  #b7938d;
 }
 .navbar-default {
     background-color: #ffffff;
-    border-color: #e7e7e7;
+    border-color: #b7938d;
 }
 .navbar-default .navbar-nav > li > a {
     color: #000;
@@ -75,9 +76,9 @@ html {
   font-family: Oswald;
   font-size: 16px;
   font-weight: bold;
-  /*position: absolute;
-  top: 50%;
-  transform: translate(100%, -50%);*/
+}
 
+h1{
+    color: #025f67;
 }
 
