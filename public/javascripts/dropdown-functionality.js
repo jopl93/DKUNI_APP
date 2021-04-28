@@ -34,7 +34,7 @@ $(document).ready(function(){
 
                 var defaultPlotlyConfiguration = { modeBarButtonsToRemove: ['sendDataToCloud', 'autoScale2d', 'lasso2d', 'select2d'], displaylogo: false, showTips: true };
         
-                Plotly.newPlot('myDiv', data, layout,defaultPlotlyConfiguration);
+                Plotly.newPlot('myDiv', data, layout,defaultPlotlyConfiguration, {responsive: true});
             })
         } else {
             $('#myDiv').empty();
@@ -136,7 +136,7 @@ $(document).ready(function(){
 
                 var defaultPlotlyConfiguration = { modeBarButtonsToRemove: ['sendDataToCloud', 'autoScale2d', 'lasso2d', 'select2d'], displaylogo: false, showTips: true };
         
-                Plotly.newPlot('myDiv', data, layout,defaultPlotlyConfiguration);
+                Plotly.newPlot('myDiv', data, layout,defaultPlotlyConfiguration, {responsive: true});
             })
         } else {
             // $('#graph').attr("src","");
@@ -258,7 +258,7 @@ $(document).ready(function(){
 
                 var defaultPlotlyConfiguration = { modeBarButtonsToRemove: ['sendDataToCloud', 'autoScale2d', 'lasso2d', 'select2d'], displaylogo: false, showTips: true };
         
-                Plotly.newPlot('myDiv', data, layout,defaultPlotlyConfiguration);
+                Plotly.newPlot('myDiv', data, layout,defaultPlotlyConfiguration,{responsive: true});
             })
         } else {
             // $('#graph').attr("src","");
@@ -267,6 +267,113 @@ $(document).ready(function(){
     }
     );
 
-    
+      $("#choiceOfGraphs").change( function(){
+        console.log(this.value);
+        if(this.value=="Produktion, KA"){
+            // $('#myDiv').show();
+            d3.csv("./images/ny_optag_kandidater.csv", function(err, rows){
+        
+                function unpack(rows, key){
+                    return rows.map(function(row) {return row [key]; });
+                }
+        
+                var trace5 = {
+                    x: unpack(rows,"SDU"),
+                    y: ['SDU'],
+                    name: 'SDU',
+                    orientation: 'h',
+                    type: 'bar',
+                    marker: {color: '#a48c74'},
+                };
+
+                var trace4 = {
+                    x: unpack(rows,"AAU"),
+                    y: ['AAU'],
+                    name: 'AAU',
+                    orientation: 'h',
+                    type: 'bar',
+                    marker: {color: '#a48c74'},
+                };
+
+
+                var trace6 = {
+                    x: unpack(rows,"RUC"),
+                    y: ['RUC'],
+                    name: 'RUC',
+                    orientation: 'h',
+                    type: 'bar',
+                    marker: {color: '#a48c74'},
+                };
+
+
+                var trace2 = {
+                    x: unpack(rows,"AU"),
+                    y: ['AU'],
+                    name: 'AU',
+                    orientation: 'h',
+                    type: 'bar',
+                    marker: {color: '#a48c74'},
+                };
+
+
+                var trace8 = {
+                    x: unpack(rows,"ITU"),
+                    y: ['ITU'],
+                    name: 'ITU',
+                    orientation: 'h',
+                    type: 'bar',
+                    marker: {color: '#a48c74'},
+                };
+
+
+                var trace3 = {
+                    x: unpack(rows,"CBS"),
+                    y: ['CBS'],
+                    name: 'CBS',
+                    orientation: 'h',
+                    type: 'bar',
+                    marker: {color: '#a48c74'},
+                };
+
+
+                var trace7 = {
+                    x: unpack(rows,"DTU"),
+                    y: ['DTU'],
+                    name: 'DTU',
+                    orientation: 'h',
+                    type: 'bar',
+                    marker: {color: '#a48c74'},
+                };
+
+                var trace1 = {
+                    x: unpack(rows,"KU"),
+                    y: ['KU'],
+                    name: 'KU',
+                    orientation: 'h',
+                    type: 'bar',
+                    marker: {color: '#a48c74'},
+                };
+
+                var layout = {
+                    title: 'Optag, KA',
+                    margin: {
+                    l: 33,
+                    r: 33
+                    },
+                    xaxis: {title: {text: 'Studerende'}}
+                }
+        
+                var data = [trace1, trace2, trace3, trace4, trace5, trace6, trace7, trace8];
+
+                var defaultPlotlyConfiguration = { modeBarButtonsToRemove: ['sendDataToCloud', 'autoScale2d', 'lasso2d', 'select2d'], displaylogo: false, showTips: true };
+        
+                Plotly.newPlot('myDiv', data, layout,defaultPlotlyConfiguration, {responsive: true});
+            })
+        } else {
+            // $('#graph').attr("src","");
+            $('#myDiv').empty();
+        }
+    }
+    );
 })
 
