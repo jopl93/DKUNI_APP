@@ -34,7 +34,7 @@ $(document).ready(function(){
 
                 var defaultPlotlyConfiguration = { modeBarButtonsToRemove: ['sendDataToCloud', 'autoScale2d', 'lasso2d', 'select2d'], displaylogo: false, showTips: true };
         
-                Plotly.newPlot('myDiv', data, layout,defaultPlotlyConfiguration, {responsive: true});
+                Plotly.newPlot('myDiv', data, layout, {staticPlot: true});
             })
         } else {
             $('#myDiv').empty();
@@ -136,7 +136,7 @@ $(document).ready(function(){
 
                 var defaultPlotlyConfiguration = { modeBarButtonsToRemove: ['sendDataToCloud', 'autoScale2d', 'lasso2d', 'select2d'], displaylogo: false, showTips: true };
         
-                Plotly.newPlot('myDiv', data, layout,defaultPlotlyConfiguration, {responsive: true});
+                Plotly.newPlot('myDiv', data, layout,{staticPlot: true});
             })
         } else {
             // $('#graph').attr("src","");
@@ -251,6 +251,7 @@ $(document).ready(function(){
                     yaxis5: {range: [0,6500]},
                     yaxis7: {range: [0,6500]},
                     grid: {rows:4, columns: 2, subplots:[['x7y','x8y'], ['x7y3','x8y3'], ['x7y5','x8y5'], ['x7y7','x8y7'] ]},
+                    
 
                 }
         
@@ -258,7 +259,7 @@ $(document).ready(function(){
 
                 var defaultPlotlyConfiguration = { modeBarButtonsToRemove: ['sendDataToCloud', 'autoScale2d', 'lasso2d', 'select2d'], displaylogo: false, showTips: true };
         
-                Plotly.newPlot('myDiv', data, layout,defaultPlotlyConfiguration,{responsive: true});
+                Plotly.newPlot('myDiv', data, layout,defaultPlotlyConfiguration, {staticPlot: true});
             })
         } else {
             // $('#graph').attr("src","");
@@ -367,7 +368,7 @@ $(document).ready(function(){
 
                 var defaultPlotlyConfiguration = { modeBarButtonsToRemove: ['sendDataToCloud', 'autoScale2d', 'lasso2d', 'select2d'], displaylogo: false, showTips: true };
         
-                Plotly.newPlot('myDiv', data, layout,defaultPlotlyConfiguration, {responsive: true});
+                Plotly.newPlot('myDiv', data, layout,defaultPlotlyConfiguration, {staticPlot: true});
             })
         } else {
             // $('#graph').attr("src","");
