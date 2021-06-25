@@ -3,51 +3,105 @@ $(document).ready(function(){
     $("#choiceOfGraphs").change( function(){
         console.log(this.value);
         if(this.value=="OptagBA"){
-            d3.csv("./images/SDU_optag_bachelorer.csv", function(err, rows){
-        
-                function unpack(rows, key){
-                    return rows.map(function(row) {return row [key]; });
-                }
-        
-                var trace1 = {
-                    x: unpack(rows,"Aargang"),
-                    y: unpack(rows,"Antal"),
-                    name: 'SDU',
-                    type: 'scatter',
-                    line: {color: '#a48c74'},
-                };
-
-                var layout = {
-                    title: 'Optag, BA (SDU)',
-                    xaxis: {title: {text: 'År'}},
-                    yaxis: 
-                        {rangemode: 'tozero',
-                        title: {text: 'Studerende'}
-                        },
-                    margin: {
-                        l: 50,
-                        r: 50
-                         }
-                }
-        
-                var data = [trace1];
-
-                var defaultPlotlyConfiguration = { modeBarButtonsToRemove: ['sendDataToCloud', 'autoScale2d', 'lasso2d', 'select2d'], displaylogo: false, showTips: true };
-        
-                Plotly.newPlot('myDiv', data, layout, {staticPlot: true});
-            })
-        } else {
-            $('#myDiv').empty();
+    
+            $("#radioButtons").show();
         }
     }
     );
+
+    $("input[name=hoved_fag]").change(function(){
+
+        console.log("Something happened.")
+
+            var radioButton = $("input[name=hoved_fag]:checked").val();
+            if(radioButton=="hum"){
+
+            
+                d3.csv("./files/Optag_BA_humaniorer.csv", function(err, rows){
+            
+                    function unpack(rows, key){
+                        return rows.map(function(row) {return row [key]; });
+                    }
+            
+                    var trace1 = {
+                        x: unpack(rows,"Aargang"),
+                        y: unpack(rows,"Sektor"),
+                        name: 'SEKTOR',
+                        type: 'scatter',
+                        line: {color: '#a48c74'},
+                    };
+
+                    var trace2 = {
+                        x: unpack(rows,"Aargang"),
+                        y: unpack(rows,"AU"),
+                        xaxis: 'x2',
+                        yaxis: 'y2',
+                        name: 'AU',
+                        type: 'scatter',
+                        line: {color: '#a48c74'},
+                    };
+
+                    var trace3 = {
+                        x: unpack(rows,"Aargang"),
+                        y: unpack(rows,"CBS"),
+                        xaxis: 'x3',
+                        yaxis: 'y3',
+                        name: 'CBS',
+                        type: 'scatter',
+                        line: {color: '#a48c74'},
+                    };
+
+                    //var layout = {
+                      //  title: 'Optag, BA (SDU)',
+                        //xaxis: {title: {text: 'År'}},
+                        //yaxis: 
+                          //  {rangemode: 'tozero',
+                            //title: {text: 'Studerende'}
+                            //},
+                        //margin: {
+                          //  l: 50,
+                           // r: 50
+                           // }
+                    //}
+
+                    var data = [trace1, trace2, trace3];
+
+                    var layout = {
+                        title: 'Optag, BA',
+                        xaxis: {title: {text: 'År'}},
+                        yaxis: 
+                            {rangemode: 'tozero',
+                                title: {text: 'Studerende'}
+                            },
+                        xaxis2: {title: {text: 'År'}},
+                        yaxis2: 
+                            {rangemode: 'tozero',
+                                title: {text: 'Studerende'}
+                            },
+                        xaxis3: {title: {text: 'År'}},
+                        yaxis3: 
+                            {rangemode: 'tozero',
+                                title: {text: 'Studerende'}
+                            },
+                    grid: {rows: 3, columns: 1, pattern: 'independent'},
+                    };
+            
+                    // var data = [trace1];
+
+                    var defaultPlotlyConfiguration = { modeBarButtonsToRemove: ['sendDataToCloud', 'autoScale2d', 'lasso2d', 'select2d'], displaylogo: false, showTips: true };
+            
+                    Plotly.newPlot('myDiv', data, layout, {staticPlot: true});
+                })
+            } else {
+                $('#myDiv').empty();
+            }
+        });
 
 
     $("#choiceOfGraphs").change( function(){
         console.log(this.value);
         if(this.value=="OptagKA"){
-            // $('#myDiv').show();
-            d3.csv("./images/ny_optag_kandidater.csv", function(err, rows){
+            d3.csv("./files/ny_optag_kandidater.csv", function(err, rows){
         
                 function unpack(rows, key){
                     return rows.map(function(row) {return row [key]; });
@@ -139,7 +193,6 @@ $(document).ready(function(){
                 Plotly.newPlot('myDiv', data, layout,{staticPlot: true});
             })
         } else {
-            // $('#graph').attr("src","");
             $('#myDiv').empty();
         }
     }
@@ -148,8 +201,7 @@ $(document).ready(function(){
     $("#choiceOfGraphs").change( function(){
         console.log(this.value);
         if(this.value=="Produktion, BA"){
-            // $('#myDiv').show();
-            d3.csv("./images/ny_optag_kandidater.csv", function(err, rows){
+            d3.csv("./files/ny_optag_kandidater.csv", function(err, rows){
         
                 function unpack(rows, key){
                     return rows.map(function(row) {return row [key]; });
@@ -262,7 +314,6 @@ $(document).ready(function(){
                 Plotly.newPlot('myDiv', data, layout,defaultPlotlyConfiguration, {staticPlot: true});
             })
         } else {
-            // $('#graph').attr("src","");
             $('#myDiv').empty();
         }
     }
@@ -271,8 +322,7 @@ $(document).ready(function(){
       $("#choiceOfGraphs").change( function(){
         console.log(this.value);
         if(this.value=="Produktion, KA"){
-            // $('#myDiv').show();
-            d3.csv("./images/ny_optag_kandidater.csv", function(err, rows){
+            d3.csv("./files/ny_optag_kandidater.csv", function(err, rows){
         
                 function unpack(rows, key){
                     return rows.map(function(row) {return row [key]; });
@@ -371,7 +421,6 @@ $(document).ready(function(){
                 Plotly.newPlot('myDiv', data, layout,defaultPlotlyConfiguration, {staticPlot: true});
             })
         } else {
-            // $('#graph').attr("src","");
             $('#myDiv').empty();
         }
     }
