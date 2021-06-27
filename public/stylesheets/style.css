@@ -51,9 +51,9 @@ p {
   margin-bottom: 1%;
 }
 
-#graph, #myDiv {
+#myDiv {
   margin-top: 2%;
-  height: 500px;
+  height: 200px;
   width: 300px;
   border:0; 
   text-decoration:none; 
@@ -81,6 +81,27 @@ p {
 
 .space-bt-text{
   padding: 2%;
+}
+
+#pHovedfag {
+  align-content: center;
+  margin-bottom: 5%;
+}
+
+#radioButtons {
+
+  margin-bottom: 5%;
+
+}
+
+table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+td {
+  width: 220px;
+  text-align: left;
 }
 
 .end-div{

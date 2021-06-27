@@ -75,7 +75,7 @@
         </div>
     </section>
 
-    <!-- What we do Section -->
+    <!-- Noegletal section -->
     <section id="noegletal" class="noegletal-section">
         <div class="container">
             <div class="row">
@@ -88,29 +88,42 @@
                         <option hidden disabled selected value>Vælg nøgletal</option>
                         <optgroup label="F. Studieaktivitet">
                           <option value="OptagBA">Optag, BA</option>
-                          <option value="OptagKA">Optag, KA</option>
-                          <option value="Produktion, BA">Optag, KA, facet</option>
-                          <option value="Produktion, KA">Optag, KA, histo</option>
-                          <option disabled value="Produktion, BA..">Produktion, BA</option>
-                          <option disabled value="Produktion, KA..">Produktion, KA</option>
+                          <option disabled value="OptagKA">Optag, KA</option>
+                          <option disabled value="Produktion, BA">Produktion, BA</option>
+                          <option disabled value="Produktion, KA">Produktion, KA</option>
                           <option disabled value="Ophør, BA">Ophør, BA </option>
                           <option disabled value="Ophør, KA">Ophør, KA </option>
                         </optgroup>
                         <optgroup label="I. Forskeruddannelse">
-                          <option disabled value="">Nyindskrevne</option>
-                          <option disabled value="audi">Tildelte grader</option>
+                          <option disabled value="nyind">Nyindskrevne</option>
+                          <option disabled value="tildelt">Tildelte grader</option>
                         </optgroup>
                       </select>
                     </div>
                     <div id='radioButtons' hidden>
-                        <input type="radio" id="hum" name="hoved_fag" value="hum">
-                          <label for="html">Humaniora</label>
-                          <input type="radio" id="samf" name="hoved_fag" value="samf">
-                          <label for="css">Samfundsvidenskab</label><br>
-                          <input type="radio" id="sund" name="hoved_fag" value="sund">
-                          <label for="javascript">Sundhedsvidenskab</label>
-                        <input type="radio" id="nattek" name="hoved_fag" value="nattek">
-                          <label for="javascript">Teknik og Naturvidenskab</label>
+                        <div id=pHovedfag> Vælg hvilket hovedfag, der ønskes data for: </div>
+                        <table> 
+                            <tr>
+                                <td>
+                                    <input type="radio" id="huma" name="hoved_fag" value="huma">
+                                    <label for="huma">Humaniora</label>
+                                </td>
+                                <td>
+                                    <input type="radio" id="samf" name="hoved_fag" value="samf">
+                                    <label for="samf">Samfundsvidenskab</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input type="radio" id="sund" name="hoved_fag" value="sund">
+                                    <label for="sund">Sundhedsvidenskab</label>
+                                </td>
+                                <td>
+                                    <input type="radio" id="nattek" name="hoved_fag" value="nattek">
+                                    <label for="nattek">Teknik og Naturvidenskab</label>
+                                </td>
+                            </tr>
+                        </table>
                     </div>
                     <div id='myDiv'></div>
                     <div class="end-div"></div>
@@ -122,7 +135,7 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
+    <!-- Kontakt Section -->
     <section id="kontakt" class="kontakt-section">
         <div class="container">
             <div class="row">
