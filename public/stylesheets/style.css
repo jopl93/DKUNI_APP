@@ -7,7 +7,6 @@
 }
 
 select {
- /*A reset of styles, including removing the default dropdown arrow*/
   background-color: transparent;
   border: none;
   padding: 0 1em 0 0;
@@ -16,8 +15,6 @@ select {
   font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-
-  /*Stack above custom arrow*/
   z-index: 1;
 }
 
@@ -28,7 +25,7 @@ select {
   min-width: 15ch;
   max-width: 30ch;
 
-  border: 1px solid; /*var(--select-border);*/
+  border: 1px solid;
   border-radius: 0.25em;
   padding: 0.25em 0.5em;
 
@@ -36,10 +33,8 @@ select {
   line-height: 1.1;
   margin-bottom: 30px;
 
-  /* Optional styles
-  remove for transparency */
     background-color:  #f1f7f7;
-  /* background-image: linear-gradient(to top, #f9f9f9, #fff 33%);    */
+  
 }
 
 p {
@@ -63,7 +58,6 @@ p {
 }
 #myDiv {
   margin-top: 3%;
-  /*margin-left: -4%;*/
   width: 100%;
 }
 
@@ -100,7 +94,7 @@ table {
 }
 
 td {
-  width: 220px;
+  width: 140px;
   text-align: left;
 }
 

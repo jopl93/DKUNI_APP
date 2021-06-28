@@ -4,12 +4,18 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Josephine Plass-Nielsen">
+    <meta name="description" content="Web-app for data visualization">
+
+    <!--Template from-->
     <link rel="canonical" href="https://html5-templates.com/" />
-    <title>DK UNI APP</title>
-    <meta name="description" content="Simplified Bootstrap template with sticky menu">
+
+    <title>DKUNI APP</title>
+
     <link href="stylesheets/bootstrap.css" rel="stylesheet">
     <link href="stylesheets/sticky-menu.css" rel="stylesheet">
     <link href="stylesheets/style.css" rel="stylesheet">
+
      <!-- jQuery -->
      <script src="javascripts/jquery.js"></script>
 
@@ -20,15 +26,14 @@
      <script src="javascripts/jquery.easing.min.js"></script>
      <script src="javascripts/sticky-menu.js"></script>
 
-     <!--Dropdown functionality -->
+     <!--Dropdown functionality (Plots) -->
      <script src="javascripts/dropdown-functionality.js"></script>
     
      <!-- Charts -->
-     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-     <script src="https://d3js.org/d3.v6.min.js"></script>
-     <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script>
-     <!-- <script src="javascripts/plotly-latest.min.js"></script> -->
+     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> <!--for graphs  -->
+     <script src='https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.17/d3.min.js'></script> <!--for graphs -->
     </head>
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container-top">
@@ -57,6 +62,7 @@
             </div>	<!-- .navbar-collapse -->
         </div>		<!-- .container -->
     </nav>
+
     <!-- Welcome   -->
     <section id="welcome" class="welcome-section">
         <div class="container"> 
@@ -83,6 +89,8 @@
                 <div class="col-lg-3 col-md-2 col-sm-1 col-xs-0"></div>
                 <div class="col-lg-6 col-md-8 col-sm-10 col-xs-12">
                     <div class="empty"></div>
+
+                    <!--Dropdown-->
                     <div class="select-custom">
                     <select name="choiceOfGraphs" id="choiceOfGraphs">
                         <option hidden disabled selected value>Vælg nøgletal</option>
@@ -100,6 +108,8 @@
                         </optgroup>
                       </select>
                     </div>
+
+                    <!--Radio Buttons-->
                     <div id='radioButtons' hidden>
                         <div id=pHovedfag> Vælg hvilket hovedfag, der ønskes data for: </div>
                         <table> 
@@ -110,22 +120,22 @@
                                 </td>
                                 <td>
                                     <input type="radio" id="samf" name="hoved_fag" value="samf">
-                                    <label for="samf">Samfundsvidenskab</label>
+                                    <label for="samf">Samfund</label>
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <input type="radio" id="sund" name="hoved_fag" value="sund">
-                                    <label for="sund">Sundhedsvidenskab</label>
+                                    <label for="sund">Sundhed</label>
                                 </td>
                                 <td>
                                     <input type="radio" id="nattek" name="hoved_fag" value="nattek">
-                                    <label for="nattek">Teknik og Naturvidenskab</label>
+                                    <label for="nattek">Teknik og Natur</label>
                                 </td>
                             </tr>
                         </table>
                     </div>
-                    <div id='myDiv'></div>
+                    <div id='myDiv'></div> <!--Plot is created here-->
                     <div class="end-div"></div>
             </div>
         </div>
@@ -162,7 +172,6 @@
     </section>
 	
 	<a id="back2Top" title="Back to top" href="#">&#10148;</a>
-<!--Template made by: https://html5-templates.com/"-->
 </body>
 
 </html>

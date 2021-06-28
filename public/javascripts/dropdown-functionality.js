@@ -98,7 +98,7 @@ $(document).ready(function(){
 
                 //The layout of the plots
                 var layout = {
-                    title: 'Antal studerende optaget på bachelor-niveau',
+                    title: 'Studerende optaget på bacheloren',
                     yaxis: //y-axis for the first subplot
                         {rangemode: 'tozero',
                             title: {text: 'Studerende'}
@@ -111,7 +111,7 @@ $(document).ready(function(){
                         {rangemode: 'tozero',
                             title: {text: 'Studerende'}
                     },
-                    yaxis4: 
+                    yaxis4:     
                         {rangemode: 'tozero',
                             title: {text: 'Studerende'}
                         },
@@ -296,7 +296,7 @@ $(document).ready(function(){
 
                     //The layout of the plots
                     var layout = {
-                        title: 'Antal studerende optaget på bachelor-niveau',
+                        title: 'Studerende optaget på bacheloren',
                         yaxis: //y-axis for the first subplot
                             {rangemode: 'tozero',
                                 title: {text: 'Studerende'}
@@ -471,7 +471,7 @@ $(document).ready(function(){
 
                     //The layout of the plots
                     var layout = {
-                        title: 'Antal studerende optaget på bachelor-niveau',
+                        title: 'Studerende optaget på bacheloren',
                         yaxis: //y-axis for the first subplot
                             {rangemode: 'tozero',
                                 title: {text: 'Studerende'}
@@ -648,7 +648,7 @@ $(document).ready(function(){
     
                     //The layout of the plots
                     var layout = {
-                        title: 'Antal studerende optaget på bachelor-niveau',
+                        title: 'Studerende optaget på bacheloren',
                         yaxis: //y-axis for the first subplot
                             {rangemode: 'tozero',
                                 title: {text: 'Studerende'}
@@ -773,9 +773,6 @@ $(document).ready(function(){
                     //Construction of the plot
                     Plotly.newPlot('myDiv', data, layout, {staticPlot: true});
                 })
-    
-    
-    
             } else {
                 $('#myDiv').empty();
             }
